@@ -176,6 +176,7 @@ void loop()
     nrf24_getData((uint8_t *)message);
     Serial.print("Receive message: ");
     Serial.println(message);
+    displayReceivedData(message, 0, 0);
     delay(100);
     digitalWrite(led, LOW);
   }
